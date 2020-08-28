@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-
-<div class="home">
+<!-- @TODO should probably add a class to this to style it! if necessary -->
+<div>
     {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
     {%- endif -%}
 
     {{ content }}
