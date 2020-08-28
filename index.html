@@ -1,0 +1,18 @@
+---
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
+---
+<div class="container">
+    <!-- <img src="{{ site.author.thumb }}" alt="author thumb" class="dot"> -->
+    <!-- <div class="dot"> -->
+    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" , class="dot">
+    <!-- </div> -->
+
+    <h1>miniscule</h1>
+    <h3>a <em>clean</em> and <em>light</em> theme for jekyll</h3>
+</div>

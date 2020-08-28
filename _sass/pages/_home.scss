@@ -1,4 +1,32 @@
 .home {
-    height: calc(70vh - (#{$spacing-unit} * 4));
+    min-height: calc(70vh - (#{$spacing-unit} * 4));
     padding: $spacing-unit 0;
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 2.5em;
+        margin: 0.3em 0;
+    }
+
+    h3 {
+        color: $brand-color;
+        font-weight: 300;
+        font-size: 1.7em;
+        em {
+            color: $brand-color-dark;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
+
+.dot {
+    padding: 5px;
+    border: 1px solid $brand-color;
+    border-radius: 50%;
+    height: 21%;
+    width: 21%;
 }
