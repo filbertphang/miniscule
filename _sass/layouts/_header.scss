@@ -14,6 +14,7 @@
     font-weight: 300;
     letter-spacing: -1px;
     margin-bottom: 0;
+    margin-left: $spacing-unit;
     float: left;
 
     @include media-query($on-palm) {
@@ -29,11 +30,12 @@
 .site-nav {
     position: absolute;
     top: 9px;
-    right: $spacing-unit / 2;
+    right: $spacing-unit;
     background-color: $background-color;
     border: 1px solid $border-color-01;
     border-radius: 5px;
     text-align: right;
+    margin-right: $spacing-unit;
 
     .nav-trigger {
         display: none;
