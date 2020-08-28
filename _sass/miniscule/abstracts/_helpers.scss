@@ -1,0 +1,6 @@
+// grid helper
+@media screen and (min-width: $on-large) {
+    .one-half {
+        width: calc(50% - (#{$spacing-unit} / 2));
+    }
+}
