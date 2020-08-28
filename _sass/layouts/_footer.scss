@@ -76,4 +76,5 @@
 
 .footer-text {
     @include centerer(true, false);
+    font-size: $small-font-size;
 }
