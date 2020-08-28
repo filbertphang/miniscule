@@ -1,9 +1,24 @@
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-      @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
   }
-  
+}
+
 @mixin relative-font-size($ratio) {
-font-size: #{$ratio}rem;
+  font-size: #{$ratio}rem;
+}
+
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }
