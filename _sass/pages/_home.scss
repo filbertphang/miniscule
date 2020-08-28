@@ -1,0 +1,4 @@
+.home {
+    height: calc(70vh - (#{$spacing-unit} * 4));
+    padding: $spacing-unit 0;
+}
