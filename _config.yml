@@ -1,10 +1,9 @@
 title: miniscule
 author:
   name: filbert phang
-  thumb: https://avatars0.githubusercontent.com/u/8911178?s=460&u=0b1b677c9519e8ad4d610be381eb76da49f257c8&v=4
-  # thumb: assets/icon.svg
-  # email: your-email@domain.com
-description: > # this means to ignore newlines until "show_excerpts:"
+  thumb: assets/miniscule.png
+
+  description: > # this means to ignore newlines until "show_excerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
