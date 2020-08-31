@@ -1,7 +1,8 @@
 .site-footer {
     // border-top: 1px solid $border-color-01;
     padding: $spacing-unit 0;
-    height: calc(20vh - (#{$spacing-unit} * 2));
+    height: 10vh;
+    // height: calc(20vh - (#{$spacing-unit} * 2));
     display: block;
 }
 
@@ -75,6 +76,7 @@
 }
 
 .footer-text {
-    @include centerer(true, false);
+    // @include centerer(true, false);
+    text-align: center;
     font-size: $small-font-size;
 }

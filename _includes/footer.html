@@ -2,11 +2,15 @@
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
     <div class="wrapper">
+        <div>
+            <!-- <div class="social-links">
+            {%- include social.html -%} -->
 
-        <div class="social-links">
-            {%- include social.html -%}
-
+            <!-- @TODO: replace footer with something more dynamic  -->
             <p class="footer-text">
+                Home // About // Projects // Blog
+                <br>
+
                 <small>&copy;{{ site.time | date: '%Y' }} All rights reserved. Made with <a href="http://jekyllrb.com/"
                         target="_blank">Jekyll</a> and ♥</small>
             </p>
