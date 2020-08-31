@@ -42,6 +42,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-wrap: break-word;
+  overflow-x: hidden;
 }
 
 /**
@@ -211,8 +212,10 @@ pre {
   max-width: calc(#{$content-width} - (2 * #{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding: $spacing-unit;
+  border-bottom: 2px solid $brand-color-light;
+  // padding-right: $spacing-unit;
+  // padding-left: $spacing-unit;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
