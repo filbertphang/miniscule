@@ -1,6 +1,6 @@
 ---
-layout: posts
-title: Posts
-permalink: /posts/
+layout: blog
+title: Blog
+permalink: /blog/
 ---
 Sample posts page content. 
