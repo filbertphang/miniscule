@@ -1,4 +1,19 @@
+# miniscule @TODO
+### what i did recently
+- reworked home landing page
+- added full screen-height content blocks
+- added recent posts to home page
+
+### todo
+- figure out title/body fonts and styling
+- add IDs and auto-scroll behaviour for links in header navbar
+- work on links in footer
+- @TODO: add link/button to view all posts
+
+
 # minima
+
+miniscule icon: https://medium.com/insider-coub/default-avatars-4275c0e41f62
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 
