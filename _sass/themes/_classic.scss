@@ -3,6 +3,7 @@
 $brand-color: #828282 !default;
 $brand-color-light: lighten($brand-color, 40%) !default;
 $brand-color-dark: darken($brand-color, 25%) !default;
+$emphasis-color: $brand-color-dark;
 
 $site-title-color: $brand-color-dark !default;
 
