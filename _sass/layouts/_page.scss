@@ -29,3 +29,11 @@
     display: block;
     @include relative-font-size(1.5);
 }
+
+.view-all {
+    font-weight: 400;
+    display: block;
+    color: $text-color !important;
+    text-align: center;
+    @include relative-font-size(1.7);
+}
