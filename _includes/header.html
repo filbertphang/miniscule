@@ -1,5 +1,5 @@
 <header class="site-header" id="{% if page.name == "index.html" %}homepage-header{% endif %}">
-  <script src="/assets/js/nav.js"></script>
+  <script src="{{ "/assets/js/nav.js" | relative_url}}"></script>
 
   <div>
     {%- assign default_paths = site.pages | map: "path" -%}
