@@ -24,4 +24,10 @@
     </ul>
     {%- endif -%}
 
+    {% if page.post-limit and page.post-page-url %}
+    <span>
+        <a class="view-all" href="{{ page.post-page-url | relative_url }}">View All</a>
+    </span>
+    {% endif %}
+
 </div>
