@@ -11,7 +11,8 @@ author:
 collections:
   - features
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: false   # set to true to show excerpts on the homepage
+one_page_header: true  # set to true to have the header display links to features instead of pages
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -51,14 +52,6 @@ minima:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-theme: minima
 
 plugins:
  - jekyll-feed
