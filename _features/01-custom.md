@@ -1,6 +1,5 @@
 ---
 title: Fully customizable
-id: desc
 ---
 This is a description about how miniscule is super cool and good to work with.
 
