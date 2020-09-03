@@ -7,12 +7,23 @@
     width: 100vw;
     background-color: $background-color;
     z-index: 999;
+    // transition: box-shadow 0.5s, height 0.5s, transform 0.5s;
+    transition: box-shadow 0.5s ease, height 0.5s ease;
 }
 
 // what happens on scroll
-html:not([data-scroll="0"]) {
-    .site-header {
-        box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+.shadow {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+}
+
+.fat {
+    height: $navbar-height * 2;
+    .site-title {
+        transform: translateY($spacing-unit);
+    }
+
+    .site-nav {
+        transform: translateY($spacing-unit);
     }
 }
 
@@ -23,6 +34,7 @@ html:not([data-scroll="0"]) {
     margin-bottom: 0;
     margin-left: $spacing-unit;
     float: left;
+    transition: transform 0.5s ease;
 
     @include media-query($on-palm) {
         padding-right: 45px;
@@ -41,6 +53,7 @@ html:not([data-scroll="0"]) {
     border: 1px solid $border-color-01;
     border-radius: 5px;
     text-align: right;
+    transition: transform 0.5s ease;
 
     .trigger {
         margin-right: $spacing-unit;

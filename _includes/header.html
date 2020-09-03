@@ -1,22 +1,13 @@
-<header class="site-header">
-  <script>
-    const storeScroll = () => {
-      document.documentElement.dataset.scroll = window.scrollY;
-    }
-    document.addEventListener('scroll', storeScroll);
-    storeScroll();
-  </script>
+<header class="site-header" id="{% if page.name == "index.html" %}homepage-header{% endif %}">
+  <script src="/assets/js/nav.js"></script>
 
   <div>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-    {% if page.name == "index.html" %}
-    <a class="site-title" rel="author" href="#top">{{ site.title | escape }}</a>
-    {% else %}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
+    <a class="site-title" rel="author"
+      href="{% if page.name == "index.html" %}#top{%else%}{{ "/" | relative_url }}{%endif%}">{{ site.title | escape }}</a>
 
     {%- if titles_size > 0 -%}
     <nav class="site-nav">
