@@ -1,9 +1,14 @@
 .site-footer {
-    // border-top: 1px solid $border-color-01;
-    padding: $spacing-unit 0;
-    height: 10vh;
-    // height: calc(20vh - (#{$spacing-unit} * 2));
     display: block;
+}
+
+.slide-out.site-footer {
+    position: sticky;
+    bottom: 0;
+
+    .footer-container {
+        z-index: -9;
+    }
 }
 
 .footer-heading {
@@ -75,8 +80,25 @@
     }
 }
 
-.footer-text {
-    // @include centerer(true, false);
-    text-align: center;
-    font-size: $small-font-size;
+.footer-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: $spacing-unit 0;
+
+    .footer-text {
+        text-align: center;
+        margin: $spacing-unit / 2 0;
+        .divider {
+            padding: 0 5px;
+        }
+    }
+    .social-media-list {
+        transform: scale(1.5);
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 }

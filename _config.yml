@@ -13,6 +13,7 @@ collections:
 
 show_excerpts: false   # set to true to show excerpts on the homepage
 one_page_header: true  # set to true to have the header display links to features instead of pages
+slide_out_footer: false
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
