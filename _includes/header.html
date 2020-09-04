@@ -22,7 +22,7 @@
       </label>
 
       <div class="trigger">
-        {% if site.one_page_header %}
+        {% if site.one_page_header and page.name == "index.html" %}
         {% for feature in site.features %}
         <a class="page-link" href="#{{ feature.id }}">{{ feature.title | escape }}</a>
         {% endfor %}
