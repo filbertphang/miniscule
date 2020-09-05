@@ -1,5 +1,6 @@
 html {
   font-size: $base-font-size;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -75,6 +76,7 @@ hr {
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  z-index: 1; // for slide-out footer
 }
 
 /**
@@ -213,7 +215,7 @@ pre {
   margin-right: auto;
   margin-left: auto;
   padding: $spacing-unit;
-  border-bottom: 2px solid $brand-color-light;
+  // border-bottom: 2px solid $brand-color-light;
   // padding-right: $spacing-unit;
   // padding-left: $spacing-unit;
   @extend %clearfix;

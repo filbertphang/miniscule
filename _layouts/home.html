@@ -1,15 +1,9 @@
----
-# {{ content }} is placed within page-content but outside
-# of a wrapper
-#
-# to be used to create additional blocks of content
----
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {%- include head.html -%}
 
-<body>
+<body id="top">
 
   {%- include header.html -%}
 
