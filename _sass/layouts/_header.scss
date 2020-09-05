@@ -54,6 +54,7 @@
     border-radius: 5px;
     text-align: right;
     transition: transform 0.5s ease;
+    background-color: $background-color;
 
     .trigger {
         margin-right: $spacing-unit;
