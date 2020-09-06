@@ -10,14 +10,12 @@
         flex-wrap: wrap;
         .left {
             width: 35%;
-            // background-color: $brand-color;
             text-align: center;
         }
 
         .right {
             width: 65%;
             text-align: left;
-            // background-color: $brand-color-light;
         }
 
         // change max-width to a pre-defined breakpoint variable
@@ -39,17 +37,13 @@
     }
 
     h1 {
-        font-weight: 500;
-        font-size: 2.5em;
-        margin: 0.3em 0;
+        font-size: $base-font-size * 3;
     }
 
-    h3 {
-        color: $brand-color;
+    span {
         font-weight: 300;
         font-size: 1.7em;
         em {
-            color: $emphasis-color;
             font-weight: 400;
             font-style: normal;
         }
@@ -61,7 +55,8 @@
         border-radius: 50%;
         height: auto;
         width: 70%;
-        margin: $spacing-unit / 2 0;
+        margin-top: $spacing-unit / 2;
+        margin-bottom: $spacing-unit;
     }
 
     .social-links {
