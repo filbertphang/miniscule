@@ -29,7 +29,9 @@
 
 .site-title {
     @include relative-font-size(1.625);
-    font-weight: 300;
+    font-weight: 800;
+    font-family: $header-font-family;
+    color: $text-color;
     letter-spacing: -1px;
     margin-bottom: 0;
     margin-left: $spacing-unit;
@@ -42,7 +44,11 @@
 
     &,
     &:visited {
-        color: $site-title-color;
+        color: $text-color;
+    }
+    &,
+    &:hover {
+        color: $link-hover-color;
     }
 }
 
@@ -94,8 +100,11 @@
         display: block;
         padding-bottom: 5px;
     }
-
+    .page-link:hover {
+        color: $link-hover-color;
+    }
     .page-link {
+        font-weight: 400;
         color: $text-color;
         line-height: $base-line-height;
         display: block;
