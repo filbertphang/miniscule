@@ -116,13 +116,22 @@ li {
 /**
  * Headings
  */
-h1,
-h2,
+
 h3,
 h4,
 h5,
 h6 {
-  font-weight: $base-font-weight;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 800;
+  font-family: $header-font-family;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: $header-font-family;
 }
 
 /**
@@ -245,7 +254,8 @@ pre {
 }
 
 .grey {
-  color: #828282;
+  // color: #828282;
+  color: $text-color;
 }
 
 .svg-icon {
@@ -255,6 +265,10 @@ pre {
   fill: currentColor;
   padding: 5px 3px 2px 5px;
   vertical-align: text-bottom;
+
+  &:hover {
+    color: $link-hover-color;
+  }
 }
 
 /**
