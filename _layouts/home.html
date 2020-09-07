@@ -36,11 +36,11 @@
     {% for feature in site.features %}
     <div class="wrapper" id="{{ feature.id }}" >
       <div class="content-block">
-        <header class="post-header" data-aos="fade-in">
+        <header class="post-header" data-aos="fade-in" data-aos-delay="50">
           <h1 class="post-title">{{ feature.title }}</h1>
         </header>
 
-        <div class="{% unless feature.no-content-wrapper %}post-content{% endunless %}" data-aos="fade-in" data-aos-delay="350">
+        <div class="{% unless feature.no-content-wrapper %}post-content{% endunless %}" data-aos="fade-in" data-aos-delay="200">
           {{ feature.content }}
         </div>
         
@@ -58,7 +58,6 @@
     AOS.init({
       once: true,
       offset: 300,
-      delay: 100,
     });
   </script>
 </body>
