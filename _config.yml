@@ -4,7 +4,6 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 author:
   name: filbert phang
-  thumb: assets/miniscule.png
 
 collections:
   - features
