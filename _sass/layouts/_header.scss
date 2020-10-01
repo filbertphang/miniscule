@@ -41,12 +41,9 @@
     @include media-query($on-palm) {
         padding-right: 45px;
     }
-
-    &,
     &:visited {
         color: $text-color;
     }
-    &,
     &:hover {
         color: $link-hover-color;
     }
