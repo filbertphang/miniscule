@@ -14,6 +14,8 @@ miniscule:
   date_format: "%b %-d, %Y"
   one_page_header: true 
   slide_out_footer: false
+  custom_home_footer: false
+
   # generate social links in footer
   social_links:
     twitter: jekyllrb

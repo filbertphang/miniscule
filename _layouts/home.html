@@ -49,7 +49,11 @@
 
   </main>
 
+  {% if site.miniscule.custom_home_footer %}
+  {%- include custom-footer.html -%}
+  {% else %}
   {%- include footer.html -%}
+  {% endif %}
   
   {{ content }}
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
