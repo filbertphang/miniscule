@@ -152,3 +152,11 @@
         }
     }
 }
+
+.progress {
+    width: 0px;
+    margin-top: $navbar-height;
+    height: 5px;
+    background-color: $brand-color-dark;
+    border-radius: 2.5px;
+}
