@@ -1,6 +1,6 @@
 .site-header {
     // border-top: 5px solid $border-color-03;
-    // border-bottom: 1px solid $border-color-01;
+    // border-bottom: 0.4px solid $border-color-01;
     height: $navbar-height;
     line-height: $base-line-height * $base-font-size * 2.25;
     position: fixed;
@@ -97,15 +97,22 @@
         display: block;
         padding-bottom: 5px;
     }
-    .page-link:hover {
-        color: $link-hover-color;
-    }
+
     .page-link {
         font-weight: 400;
         color: $text-color;
         line-height: $base-line-height;
         display: block;
         padding: 5px 10px;
+        transition: font-weight 0.1s;
+
+        &:hover {
+            color: $link-hover-color;
+        }
+
+        &.active {
+            font-weight: 800;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
